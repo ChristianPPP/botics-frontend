@@ -1,0 +1,8 @@
+<div class="container">
+  <div class="card" *ngFor="let lab of labs">
+    <img [src]="lab.image"/>
+    <h4>{{ lab.name }}</h4>
+    <p>{{ lab.state }}</p>
+    <a  [routerLink]="['lab-computadoras']" [queryParams]="{ id: lab.id }">Link</a>
+  </div>
+</div>
